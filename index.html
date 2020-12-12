@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo's Library</title>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      Library
+    </div>
+    <div class="button">
+      <div id="line1"></div>
+      <div id="line2"></div>
+    </div>
+  </div>
+  <div class="form">
+    <form action="submit">
+      <label for="bookName">Book Name:</label>
+      <input type="text" id="bookName">
+      <label for="author">Author:</label>
+      <input type="text" id="author">
+      <label for="pagesNumber">Number Of Pages:</label>
+      <input type="text" id="pagesNumber">
+      <label for="readed">Did you read this book?
+        <input name="readed" type="radio" value="true" checked> yes
+        <input name="readed" type="radio" value="false">no
+      </label>
+      <input type="submit" value="submit" id="submitButton">
+    </form>
+  </div>
+  <div id="library"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</body>
+
+</html>
